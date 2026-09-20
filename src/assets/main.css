@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ==========================================================================
+   CAFE COLLECTION PALETTE - CSS TOKENS
+   --------------------------------------------------------------------------
+   - CHAI:    #E4D8CB (RGB: 228 216 203) - Page Background
+   - FROTH:   #F1EEEB (RGB: 241 238 235) - Card & Table Surface
+   - CREME:   #CDC6C3 (RGB: 204 198 195) - Line & Border Dividers
+   - LATTE:   #A09086 / #6E625B          - Secondary Muted Text
+   - CINNA:   #CFB3A9 (RGB: 207 179 169) - Warm Blush Signal & Badges
+   - INK:     #241E1C                    - Deep Roast Espresso Text
+   - ACCENT:  #6B483D                    - Warm Roasted Mocha Primary CTA
+   ========================================================================== */
+
+:root {
+  color-scheme: light;
+  --color-bg: #E4D8CB;
+  --color-surface: #F1EEEB;
+  --color-ink: #241E1C;
+  --color-muted: #6E625B;
+  --color-line: #CDC6C3;
+  --color-accent: #6B483D;
+  --color-accent-ink: #FFFFFF;
+  --color-signal: #CFB3A9;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background-color: #E4D8CB;
+  color: #241E1C;
+  font-family: 'Instrument Sans', system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+/* Primary heading & text overrides */
+h1, h2, h3, h4, h5, h6 {
+  color: #241E1C;
+}
+
+/* Accessible focus ring using accent token */
+:focus-visible {
+  outline: 2px solid #6B483D;
+  outline-offset: 3px;
+}
+
+/* Reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Carousel scroll track */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
