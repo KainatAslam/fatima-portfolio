@@ -3,18 +3,21 @@
  * CHAI (#E4D8CB), FROTH (#F1EEEB), CREME (#CDC6C3), LATTE (#A09086), CINNA (#CFB3A9), INK (#241E1C), ACCENT (#6B483D)
  */
 const createPlaceholderSvg = (code, title) => {
-  const svg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" width="640" height="400">
-    <rect width="640" height="400" fill="#F1EEEB"/>
-    <rect x="1" y="1" width="638" height="398" fill="none" stroke="#CDC6C3" stroke-width="2"/>
-    <g transform="translate(320, 180)" text-anchor="middle">
-      <rect x="-35" y="-70" width="70" height="125" rx="12" fill="#E4D8CB" stroke="#6B483D" stroke-width="2"/>
-      <rect x="-14" y="-92" width="28" height="22" rx="4" fill="#6B483D"/>
-      <line x1="-35" y1="-20" x2="35" y2="-20" stroke="#CDC6C3" stroke-width="1.5" stroke-dasharray="4 2"/>
-      <circle cx="0" cy="15" r="8" fill="none" stroke="#6B483D" stroke-width="2"/>
+  const svg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 640" width="480" height="640">
+    <rect width="480" height="640" fill="#F1EEEB"/>
+    <rect x="1" y="1" width="478" height="638" fill="none" stroke="#E4D8CB" stroke-width="2"/>
+    <line x1="0" y1="213" x2="480" y2="213" stroke="#E4D8CB" stroke-width="1"/>
+    <line x1="0" y1="426" x2="480" y2="426" stroke="#E4D8CB" stroke-width="1"/>
+    <line x1="160" y1="0" x2="160" y2="640" stroke="#E4D8CB" stroke-width="1"/>
+    <line x1="320" y1="0" x2="320" y2="640" stroke="#E4D8CB" stroke-width="1"/>
+    <g transform="translate(240, 300)" text-anchor="middle">
+      <rect x="-36" y="-100" width="72" height="148" rx="14" fill="#E4D8CB" stroke="#6B483D" stroke-width="2"/>
+      <rect x="-14" y="-118" width="28" height="22" rx="5" fill="#6B483D"/>
+      <line x1="-36" y1="-25" x2="36" y2="-25" stroke="#CDC6C3" stroke-width="1.5" stroke-dasharray="5 3"/>
+      <circle cx="0" cy="22" r="10" fill="none" stroke="#6B483D" stroke-width="2"/>
     </g>
-    <text x="36" y="52" fill="#6B483D" font-family="'Instrument Sans', sans-serif" font-size="12" font-weight="700" letter-spacing="2">${code}</text>
-    <text x="36" y="358" fill="#241E1C" font-family="'Bricolage Grotesque', sans-serif" font-size="22" font-weight="700">${title}</text>
-    <text x="604" y="358" fill="#6E625B" font-family="'Instrument Sans', sans-serif" font-size="11" font-weight="600" text-anchor="end" letter-spacing="1.5">FORMULATION R&amp;D</text>
+    <text x="28" y="46" fill="#6B483D" font-family="'Instrument Sans', sans-serif" font-size="11" font-weight="700" letter-spacing="2">${code}</text>
+    <text x="28" y="610" fill="#241E1C" font-family="'Bricolage Grotesque', sans-serif" font-size="17" font-weight="700">${title}</text>
   </svg>`
 
   return `data:image/svg+xml;utf8,${encodeURIComponent(svg)}`
