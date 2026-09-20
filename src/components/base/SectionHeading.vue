@@ -26,8 +26,8 @@ defineProps({
 
 <template>
   <header
-    class="mb-10 sm:mb-12 md:mb-16"
-    :class="align === 'center' ? 'text-center mx-auto max-w-3xl' : 'text-left max-w-3xl'"
+    class="mb-6 sm:mb-8 md:mb-10"
+    :class="align === 'center' ? 'text-center mx-auto max-w-5xl' : 'text-left max-w-5xl'"
   >
     <p
       v-if="eyebrow"
@@ -45,7 +45,7 @@ defineProps({
 
     <p
       v-if="description"
-      class="mt-3 sm:mt-4 text-base sm:text-lg text-muted leading-relaxed font-normal"
+      class="mt-2 text-base sm:text-sm text-muted leading-relaxed font-normal"
     >
       {{ description }}
     </p>

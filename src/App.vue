@@ -34,15 +34,12 @@ import FloatingNav from '@/components/layout/FloatingNav.vue'
       <!-- Section 6: Biographical Notes (id: about) -->
       <AboutSection />
 
-      <!-- Section 7: Let's Talk (id: contact) -->
-      <ContactSection />
     </main>
 
     <!-- Base Semantic Footer -->
-    <footer class="py-12 border-t border-line text-center text-xs text-muted">
+    <footer class="py-6 border-t border-line text-center text-xs text-muted">
       <div class="max-w-6xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
         <p>© {{ new Date().getFullYear() }} Fatima Aslam. All formulations, dossiers &amp; clinical data proprietary.</p>
-        <p class="text-muted">Built with Vue 3 (Composition API), Vite &amp; Tailwind CSS</p>
       </div>
     </footer>
   </div>

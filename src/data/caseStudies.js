@@ -11,21 +11,21 @@ export const caseStudiesData = {
       id: "case-1",
       client: "Aura Dermaceuticals",
       title: "Stabilizing Volatile Bio-Actives in Water-Rich Emulsions",
-      shortProblem: "Phase separation and rapid oxidation in a 5% Ectoin + Multi-Ceramide barrier serum.",
+      shortProblem: "Phase separation and oxidation in a barrier serum.",
       problem: {
-        challenge: "The formulation team faced severe phase-splitting under accelerated thermal cycling (45°C/75% RH) and premature active oxidation within 14 days of pilot packaging.",
+        challenge: "The serum split under thermal cycling and its actives oxidized within 14 days.",
         constraints: [
-          "Zero synthetic emulsifiers (PEG-free, silicone-free mandate)",
-          "Must achieve skin-penetrating lamellar vesicle structure",
-          "Target batch scale-up to 2,000L without high-shear homogenization degradation"
+          "PEG- and silicone-free",
+          "Skin-penetrating lamellar structure",
+          "Scale to 2,000L without degradation"
         ]
       },
       solution: {
-        approach: "Re-architected the fluid structure using high-pressure micro-fluidized lecithin bilayer self-assembly coupled with a dual-phase synergistic antioxidant complex (Ferulic Acid + Tocopherol isomer).",
+        approach: "Rebuilt the fluid structure with micro-fluidized lecithin and a dual-phase antioxidant system.",
         decisions: [
-          "Replaced standard acrylic carbomer with sclerotium-xanthan bio-ferment mesh for high electrolyte tolerance at pH 5.2.",
-          "Implemented nitrogen-purged low-temperature batching (<38°C) to prevent thermal degradation during emulsification.",
-          "Selected airless pouch-in-bottle pump to preserve active oxidation state over 24-month shelf life."
+          "Swapped carbomer for a high-tolerance sclerotium-xanthan mesh.",
+          "Used nitrogen-purged batching below 38°C.",
+          "Selected airless pouch-in-bottle packaging."
         ],
         stack: [
           "Micro-Fluidization",
@@ -54,21 +54,21 @@ export const caseStudiesData = {
       id: "case-2",
       client: "Kroma Labs",
       title: "Encapsulating 0.15% Retinaldehyde Without Barrier Irritation",
-      shortProblem: "Photolytic instability and transepidermal water loss (TEWL) spike in high-potency retinoid.",
+      shortProblem: "Photolytic instability and irritation in a high-potency retinoid.",
       problem: {
-        challenge: "Retinaldehyde provides 11x faster conversion than retinol but exhibits intense photolytic degradation and severe epidermal barrier sting in sensitive skin cohorts.",
+        challenge: "Retinaldehyde converts quickly but degrades in light and stings sensitive skin.",
         constraints: [
-          "No synthetic penetration enhancers (no ethoxydiglycol or propylene glycol)",
-          "Must achieve crystalline clarity without cloudiness or precipitating crystals",
-          "Non-irritating clinical safety profile verified by HRIPT dermatological patch test"
+          "No synthetic penetration enhancers",
+          "Crystal clarity without precipitation",
+          "Non-irritating HRIPT safety profile"
         ]
       },
       solution: {
-        approach: "Engineered a supramolecular cyclodextrin-lipid cage that shields the conjugated polyene chain from light while enabling slow-release enzymatic triggering upon contact with skin esterases.",
+        approach: "Built a cyclodextrin-lipid cage to shield retinaldehyde and release it slowly on skin.",
         decisions: [
-          "Engineered cyclodextrin inclusion cavity with cold-processed squalane shell.",
-          "Buffering with panthenol and bisabolol to prevent inflammatory mediator release.",
-          "Amber borosilicate glass packaging with calibrated 0.25ml metered dropper."
+          "Paired a cyclodextrin cavity with a cold-processed squalane shell.",
+          "Buffered with panthenol and bisabolol.",
+          "Used amber glass with a metered dropper."
         ],
         stack: [
           "Supramolecular Chemistry",
@@ -97,21 +97,21 @@ export const caseStudiesData = {
       id: "case-3",
       client: "Solstice Skincare",
       title: "Zero-White-Cast SPF 50+ Hybrid Photostable System",
-      shortProblem: "Heavy chalky residue and oiliness across diverse skin phototypes (Fitzpatrick I–VI).",
+      shortProblem: "White cast and oiliness across diverse skin tones.",
       problem: {
-        challenge: "Creating an ultra-high protection broad-spectrum sun care fluid (UVA-PF > 25) that spreads with water-like fluidity and leaves undetectable finish across all skin tones.",
+        challenge: "The SPF fluid needed high UVA protection, water-like spread, and an invisible finish.",
         constraints: [
-          "Compliant with stringent EU Annex VI and FDA OTC Monograph standards",
-          "Reef-safe requirement (strictly Oxybenzone- and Octinoxate-free)",
-          "Non-comedogenic, dry-touch finish suitable under makeup and humid conditions"
+          "EU Annex VI and FDA OTC compliant",
+          "Oxybenzone- and Octinoxate-free",
+          "Dry-touch and non-comedogenic"
         ]
       },
       solution: {
-        approach: "Created a bi-continuous hybrid lattice combining micronized, silica-coated Zinc Oxide with modern organic photostable filters (Tinosorb S, Uvinul A Plus) suspended in volatile plant alkanes.",
+        approach: "Created a hybrid lattice of silica-coated Zinc Oxide and photostable organic filters in plant alkanes.",
         decisions: [
-          "Used silica encapsulation to prevent catalytic ROS formation from inorganic mineral filters.",
-          "Replaced heavy silicone fluids with biodegradable C13-15 isoamyl laurate for zero-tack dry down.",
-          "Integrated antioxidant Pongamia extract to boost in-vivo SPF efficiency by +18%."
+          "Used silica encapsulation to limit mineral-filter reactivity.",
+          "Replaced heavy silicones with biodegradable isoamyl laurate.",
+          "Added Pongamia extract to improve in-vivo SPF efficiency."
         ],
         stack: [
           "Photostability Kinetics",
